@@ -3,4 +3,3 @@ pymongo
 playwright
 python-dotenv
 uvicorn
-json
