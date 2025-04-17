@@ -151,14 +151,3 @@ async def scrape_hackathons():
         
         await browser.close()
         return data
-
-if __name__ == "__main__":
-    async def main():
-        await scrape_hackathons()
-        
-        #update the database (using the async function)
-        results = await update_hackathon_data()
-        print(results["message"])
-    
-    # Run the main async function
-    asyncio.run(main())
